@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;700;800&family=Libre+Baskerville&family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@400;600;800&display=swap');
 
 
 /* font-family: 'Libre Baskerville', serif;
@@ -22,7 +22,6 @@ body{
 header{
     background-image: url('images/fondo9.png');
     background-repeat: no-repeat;
-    margin-bottom: 4rem;
 }
 
 header .filter-header{
@@ -95,14 +94,20 @@ header nav a:hover{
 #container-menu{
     margin: 0 auto;
     text-align: center;
+    background-color:#ddddddb6;
+    padding: 2rem 0rem;
+
 }
 
 #container-menu h2{
     font-family: 'Raleway', sans-serif;
     font-size: 5rem;
     margin: 2rem 0rem;
-    color:rgb(226, 84, 37);
+    padding: 1rem;
+    color:white;
+    background-color: rgb(231, 64, 8);
 }
+
 
 
 #container-menu a h3{
@@ -111,30 +116,29 @@ header nav a:hover{
     background-color: white;
     text-decoration: none;
     margin-right: 2rem;
+    margin-top:1rem;
     font-weight:bold;
     padding:0.8rem;
     display:inline-block;
     color:black;
     cursor:pointer;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 
 
 
-#menu{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap:1rem;
-    grid-auto-rows: minmax(100px, auto); */
-    margin: 4rem 10rem;
+#menu .img{
+  
+    padding: 2rem;
+    margin-top:3rem;
 }
-
-
 
 #menu img{
-    width: 50rem;
-    height: 30rem;
+    width: 45rem;
+    height: 25rem;
+
 }
 .menu-seccion{
     display:flex;
@@ -142,12 +146,17 @@ header nav a:hover{
     justify-content:center;
     flex-direction:column;
     padding:2rem;
-    background-color: rgba(167, 148, 123, 0);
+    margin: 2rem 8rem;
   /*   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+#menu .solo{
+    margin: 0 15rem;
 }
 
 .menu-seccion h3{
     font-size: 2.5rem;
+    border-bottom: .4rem solid rgb(226, 84, 37)  ;
 }
 .menu-entrada{
     padding: 1rem;
@@ -215,7 +224,7 @@ footer .footer-filter{
     justify-content: space-between;
     align-items: center;
      font-family: 'Libre Baskerville', serif;
-     background-color: rgba(155, 178, 196, 0.418);
+     background-color: rgba(173, 197, 212, 0.418);
 }
 
 footer{
@@ -225,7 +234,9 @@ footer{
 
 footer p{
     font-size: 1.2;
+    
 }
+
 footer a{
   font-size: 2rem;
   padding-left:1.5rem;
