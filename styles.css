@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;700;800&family=Libre+Baskerville&family=Raleway:wght@400;800&display=swap');
 
 
 /* font-family: 'Libre Baskerville', serif;
@@ -11,50 +10,60 @@ font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
     text-decoration: none;
     font-family: 'Libre Baskerville', serif;
+
 }
 
 
 body{
-    background-color: #FCFBE8;
+    background-color:  #dee1e6b0;
 
 }
 
 header{
-    background-image: url('images/fondo1.png');
+    background-image: url('images/fondo9.png');
+    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+}
+
+header .filter-header{
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    height:70vh;
- 
+    height:100vh;
+    background-color: rgba(3, 22, 44, 0.616);
+    
 }
+
+
+
 header h1{
     padding-top:2rem;
-    color: #ffffff;
+    color: #f1eded;
     font-family: 'Raleway', sans-serif;
     /* font-family:  'Luckiest Guy', cursive; */
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: 800;
+
 }
 
 header p{
-    font-size:1.1rem;
-    color: white;
-    font-weight: bold;
+    font-size:1.5rem;
+    color: #ffffff;
     font-family: 'Libre Baskerville', serif;
-    text-decoration: underline rgb(231, 64, 8) .2rem;
-    padding: 0.5rem;
+    text-decoration: underline rgb(226, 84, 37) .2rem;
+
 }
 
 header h1::first-letter{
-    color: rgb(231, 64, 8);
+    color: rgb(226, 84, 37);
     font-family:  'Luckiest Guy', cursive;
     font-family: 'Raleway', sans-serif;
-    font-size: 6rem;
+    font-size: 10rem;
 }
 
 header nav{
-    margin-top: 4rem;
+    margin-top: 3.5rem;
 
 }
 
@@ -72,6 +81,7 @@ header nav  a{
     display:block;
     color:black;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
 
 }
 
@@ -83,7 +93,6 @@ header nav a:hover{
 }
 
 #container-menu{
-    margin-top:5rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -92,6 +101,7 @@ header nav a:hover{
     font-family: 'Raleway', sans-serif;
     font-size: 5rem;
     margin: 2rem 0rem;
+    color:rgb(226, 84, 37);
 }
 
 
@@ -103,10 +113,13 @@ header nav a:hover{
     margin-right: 2rem;
     font-weight:bold;
     padding:0.8rem;
-    display:inline;
+    display:inline-block;
     color:black;
+    cursor:pointer;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+
 
 
 #menu{
@@ -175,27 +188,44 @@ header nav a:hover{
 }
 
 #menu a button{
-    background-color: aqua;
+    border-radius: 80%;
+    -webkit-border-radius: 80%;
+    -moz-border-radius: 80%;
+    -ms-border-radius: 80%;
+    -o-border-radius: 80%;
     padding:1rem;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    font-size:1rem;
-    cursor:pointer;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    color:black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#menu a button:hover{
+    cursor: pointer;
+    background-color:rgb(231, 64, 8);
+    color: white;
 }
 
 
-footer{
-    background-color: rgb(221, 218, 214);
+footer .footer-filter{
     padding:2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-     font-family: 'Libre Baskerville', serif
+     font-family: 'Libre Baskerville', serif;
+     background-color: rgba(155, 178, 196, 0.418);
 }
 
+footer{
+    background-image: url(images/fondo9.png);
+    color:white;
+}
+
+footer p{
+    font-size: 1.2;
+}
 footer a{
   font-size: 2rem;
   padding-left:1.5rem;
