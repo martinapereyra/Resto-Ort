@@ -226,7 +226,7 @@ footer .footer-filter{
 }
 
 footer{
-    background-image: url(images/fondo9.png);
+    background-image: url("images/fondoHeader.png");
     color:white;
 }
 
