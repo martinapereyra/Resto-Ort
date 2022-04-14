@@ -53,23 +53,21 @@ header p{
 
 header h1::first-letter{
     color: rgb(226, 84, 37);
-    font-family:  'Luckiest Guy', cursive;
     font-family: 'Raleway', sans-serif;
     font-size: 10rem;
 }
 
 header nav{
     margin-top: 3.5rem;
+    display:flex;
+    flex-direction: row;
 
 }
 
+
 header nav  a{
     border-radius: 80%;
-    -webkit-border-radius: 80%;
-    -moz-border-radius: 80%;
-    -ms-border-radius: 80%;
-    -o-border-radius: 80%;
-    padding:1rem;
+    padding:1.1rem;
     font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -77,6 +75,7 @@ header nav  a{
     display:block;
     color:black;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 1rem;
     
 
 }
@@ -91,7 +90,6 @@ header nav a:hover{
 #container-menu{
     margin: 0 auto;
     text-align: center;
-    background-color:#ddddddb6;
     padding: 2rem 0rem;
 
 }
@@ -128,10 +126,6 @@ header nav a:hover{
     background-color:rgb(231, 64, 8);
     color: white;
     transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }
 
 
@@ -153,7 +147,6 @@ header nav a:hover{
     flex-direction:column;
     padding:2rem;
     margin: 2rem 8rem;
-  /*   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
 }
 
 #menu .solo{
@@ -169,7 +162,6 @@ header nav a:hover{
     padding: 1rem;
     background-color: rgba(224, 87, 41, 0);
     margin: 1rem;
-    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
     text-align: left;
 }
 
@@ -193,7 +185,6 @@ header nav a:hover{
 
 .item-menu{
     margin-top:4rem;
-    display:row;
     justify-content: center;
     align-items: center;
 }
@@ -203,26 +194,111 @@ header nav a:hover{
     grid-column-end: 3;
 }
 
-#menu a button{
+#menu a{
     border-radius: 80%;
-    -webkit-border-radius: 80%;
-    -moz-border-radius: 80%;
-    -ms-border-radius: 80%;
-    -o-border-radius: 80%;
     padding:1rem;
     font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
     background-color: white;
     text-decoration: none;
+    display: inline-block;
     color:black;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    margin-bottom:2rem;
+    margin-bottom: 3rem;
+    border: 2px solid black;
+
 }
 
-#menu a button:hover{
+#menu a:hover{
     cursor: pointer;
     background-color:rgb(231, 64, 8);
     color: white;
+}
+
+#titulo-reserva{
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin: 2rem 0rem;
+    padding: 1rem;
+    color:white;
+    background-color: rgb(231, 64, 8);
+}
+
+#formulario{
+    background-image: url("images/fondo-form.png");
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3rem;
+}
+#formulario h3{
+    font-size: 2rem;
+}
+
+#formulario h3 span{
+    color:rgb(231, 64, 8);
+    background-color: #f1eded;
+    padding: .2rem;
+    font-size:2.5rem;
+}
+
+#formulario form{
+    background-color: rgba(8, 3, 1, 0.774);
+    align-items: center;
+    padding:3rem 10rem;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.parte-form{
+    display: flex;
+
+}
+
+
+#formulario input[type="submit"]{
+    padding:.5rem;
+    font-size: 1.2rem;
+    margin-top:2rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    color:black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    border: 2px solid black;
+}
+
+
+#formulario input[type="submit"]:hover{
+    cursor: pointer;
+    background-color:rgb(168, 155, 150);
+    color: white;
+}
+
+#formulario  label{
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    display: inline-block;
+  width: 80px;
+}
+
+#formulario form input{
+    border-radius: 1rem;
+   padding:.5rem;
+   background-color:#ebedeed8;
+   width:20rem;
+
 }
 
 
@@ -241,8 +317,7 @@ footer{
 }
 
 footer p{
-    font-size: 1.2;
-    
+    font-size: 1rem;
 }
 
 footer a{
@@ -250,13 +325,11 @@ footer a{
   padding-left:1.5rem;
   color:rgb(231, 64, 8);
   display: inline-block;
+
  
 }
 
 footer a:hover{
     transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+
 }

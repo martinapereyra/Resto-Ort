@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resto-Ort</title>
+    <title>Rest-Ort</title>
     
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
@@ -18,8 +18,8 @@
             <h1>Rest-Ort</h1>
             <p>Las mejores delicias en un solo lugar</p>
             <nav>
-            <!--  <button>Reservar</button> -->
-                <a href="#container-menu"><h3>Menú</h3></a></button>
+                <a href="#container-menu"><h3>Menú</h3></a>
+                <a href="#titulo-reserva"><h3>Reservar</h3></a>
             </nav>
         </div>
     </header>
@@ -173,21 +173,60 @@
                                 </div>
                                 <p> Refresco, fresco o soda es una bebida hecha a base de agua carbonatada, edulcorantes naturales, colorantes, antioxidantes, estabilizadores de acidez y conservadores.</p>
                             </div>
-
                 
                     </div>
                 </div>
 
-                <a href="#">
-                    <button>
-                        <i class="fa-solid fa-circle-arrow-up"></i>
-                        Volver</button>
-                </a>
+                <!-- <a href="#">
+                        <i class="fa-solid fa-circle-arrow-up"></i> Volver
+                </a> -->
             
             </div>
-            
-            
+        
+    </section>
+
+    <h2 id="titulo-reserva"><i class="fa-solid fa-bell-concierge"></i> Reservar </h2>
+    
+
+    <section id="formulario">
+        <div>
+           <h3>Disfruta de una experiencia <span>única</span> e <span>inigualable</span></h3> 
         </div>
+        <form action="respuesta.html" method="post">
+            <div class="parte-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre"  required>
+            </div>
+            <br>
+            <div class="parte-form">
+                <label for="apellido"> Apellido:</label>
+                <input type="text" name="apellido" id="apellido"  required>
+            </div>
+            <br>
+            <div class="parte-form">
+                <label for="mail">Mail:</label>
+                <input type="email" name="mail" id="mail" pattern="[^ @]*@[^ @]*" required>
+            </div>
+            <br>
+            <div class="parte-form">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name= "telefono" id="telefono" 
+                required>
+            </div>
+            <br>
+            <div class="parte-form">
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <br>
+            <div class="parte-form">
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
     </section>
 
  
