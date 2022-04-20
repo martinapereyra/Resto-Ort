@@ -14,7 +14,16 @@
 
 body{
     background-color:  #dee1e6b0;
+    position:absolute;
 
+}
+
+.btn-subir{
+    position:absolute;
+    z-index: 999;
+    background-color: orange;
+    padding: 2rem;
+    position:fixed;
 }
 
 header{
@@ -248,7 +257,7 @@ header nav a:hover, #reserva nav a:hover {
 #formulario h3 span{
     color:rgb(231, 64, 8);
     background-color: #f1eded;
-    padding: .2rem;
+    padding: .2rem .2rem;
     font-size:2.5rem;
 }
 
@@ -272,6 +281,19 @@ header nav a:hover, #reserva nav a:hover {
 #formulario{
     height:100vh;
 }
+
+#formulario form input{
+    border-radius: 1rem;
+   padding:.5rem;
+   background-color:#ffffffd8;
+   border:none;
+   outline: none;
+   width:20rem;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   font-size: 1rem;
+
+}
+
 #formulario input[type="submit"]{
     padding:.5rem;
     font-size: 1.2rem;
@@ -283,7 +305,8 @@ header nav a:hover, #reserva nav a:hover {
     color:black;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.445);
+    width:8vw;
 }
 
 
@@ -291,6 +314,7 @@ header nav a:hover, #reserva nav a:hover {
     cursor: pointer;
     background-color:rgb(231, 64, 8);
     color: white;
+    outline: none;
 }
 
 #formulario  label{
@@ -301,17 +325,11 @@ header nav a:hover, #reserva nav a:hover {
     display: inline-block;
 }
 
-#formulario form input{
-    border-radius: 1rem;
-   padding:.5rem;
-   background-color:#ffffffd8;
-   width:20rem;
-
-}
 
 #formulario form input:focus
 {
-    outline: .2rem solid rgba(235, 99, 8, 0.897);
+    outline: .2rem solid rgba(235, 99, 8, 0.671);
+    background-color:rgba(235, 99, 8, 0.479);
     
 }
 
