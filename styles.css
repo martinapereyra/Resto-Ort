@@ -22,11 +22,14 @@ header{
     background-repeat: no-repeat;
 }
 
+
+
 header .filter-header{
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction: column;
+    flex-wrap: wrap;
     height:100vh;
     background-color: rgba(3, 22, 44, 0.616);
     
@@ -40,6 +43,7 @@ header h1{
     font-family: 'Raleway', sans-serif;
     font-size: 8rem;
     font-weight: 800;
+    text-align: center;
 
 }
 
@@ -65,7 +69,7 @@ header nav{
 }
 
 
-header nav  a{
+header nav  a, #reserva nav a{
     border-radius: 80%;
     padding:1.1rem;
     font-size: 1.5rem;
@@ -80,7 +84,7 @@ header nav  a{
 
 }
 
-header nav a:hover{
+header nav a:hover, #reserva nav a:hover {
     cursor: pointer;
     background-color:rgb(231, 64, 8);
     color: white;
@@ -238,6 +242,7 @@ header nav a:hover{
 }
 #formulario h3{
     font-size: 2rem;
+    color: white;
 }
 
 #formulario h3 span{
@@ -248,25 +253,29 @@ header nav a:hover{
 }
 
 #formulario form{
-    background-color: rgba(8, 3, 1, 0.774);
+    background-color: rgba(255, 255, 255, 0.842);
     align-items: center;
     padding:3rem 10rem;
     font-weight: bold;
     display:flex;
     flex-direction: column;
     justify-content:space-evenly;
+    box-shadow: 6px 5px 1px 4px rgb(231, 64, 8);
 }
 
 .parte-form{
     display: flex;
+    flex-direction: column;
 
 }
 
-
+#formulario{
+    height:100vh;
+}
 #formulario input[type="submit"]{
     padding:.5rem;
     font-size: 1.2rem;
-    margin-top:2rem;
+    margin-top:1rem;
     font-family: 'Raleway', sans-serif;
     background-color: white;
     text-decoration: none;
@@ -280,25 +289,30 @@ header nav a:hover{
 
 #formulario input[type="submit"]:hover{
     cursor: pointer;
-    background-color:rgb(168, 155, 150);
+    background-color:rgb(231, 64, 8);
     color: white;
 }
 
 #formulario  label{
     margin-bottom: 1rem;
-    color: white;
+    color:rgb(231, 64, 8);
     font-size: 1.4rem;
     margin-right: 2rem;
     display: inline-block;
-  width: 80px;
 }
 
 #formulario form input{
     border-radius: 1rem;
    padding:.5rem;
-   background-color:#ebedeed8;
+   background-color:#ffffffd8;
    width:20rem;
 
+}
+
+#formulario form input:focus
+{
+    outline: .2rem solid rgba(235, 99, 8, 0.897);
+    
 }
 
 
@@ -332,4 +346,12 @@ footer a{
 footer a:hover{
     transform: scale(1.2);
 
+}
+
+/* Respuesta */
+
+
+
+.reserva{
+    background-image: url('images/fondo-form.png');
 }
