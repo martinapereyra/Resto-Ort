@@ -192,28 +192,27 @@
         <div>
            <h3>Disfruta de una experiencia <span>única</span> e <span>inigualable</span></h3> 
         </div>
-        <form action="respuesta.html" method="get">
+        <form id="form" action="respuesta.html" method="get">
            
                 <div class="parte-form">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre"  required>
+                    <input type="text" name="nombre" id="nombre"  >
                 </div>
                 <br>
                 <div class="parte-form">
                     <label for="apellido"> Apellido:</label>
-                    <input type="text" name="apellido" id="apellido"  required>
+                    <input type="text" name="apellido" id="apellido"  >
                 </div>
    
             <br>
             <div class="parte-form">
                 <label for="mail">Mail:</label>
-                <input type="email" name="mail" id="mail" pattern="[^ @]*@[^ @]*" required>
+                <input type="text" name="mail" id="mail">
             </div>
             <br>
             <div class="parte-form">
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" name= "telefono" id="telefono" 
-                required>
+                <input type="tel" name= "telefono" id="telefono" >
             </div>
             <br>
             <div class="parte-form">
@@ -228,7 +227,7 @@
                 <input type="time" name="hora" id="hora">
             </div>
             <br>
-            <input id="submit" type="submit" value="Enviar">
+            <input id="enviar" type="submit" value="Enviar">
         </form>
 
     </section>
@@ -249,6 +248,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 
 </body>
 </html>

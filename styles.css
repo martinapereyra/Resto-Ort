@@ -269,6 +269,8 @@ header nav a:hover, #reserva nav a:hover {
     flex-direction: column;
     justify-content:space-evenly;
     box-shadow: 6px 5px 1px 4px rgb(231, 64, 8);
+    width: 38vw;
+
 }
 
 .parte-form{
@@ -279,6 +281,7 @@ header nav a:hover, #reserva nav a:hover {
 
 #formulario{
     height:100vh;
+    padding: 0 2rem;
 }
 
 #formulario form input{
@@ -305,7 +308,7 @@ header nav a:hover, #reserva nav a:hover {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
     border: 2px solid rgba(0, 0, 0, 0.445);
-    width:8vw;
+    width:8rem;
     transition: all 300ms ease 0ms;
 }
 
@@ -330,7 +333,8 @@ header nav a:hover, #reserva nav a:hover {
 {
     outline: .2rem solid rgba(235, 99, 8, 0.671);
     background-color:rgba(235, 99, 8, 0.479);
-    
+    transition: all 100ms ease 0ms;
+
 }
 
 
@@ -367,9 +371,9 @@ footer a:hover{
 }
 
 .btn-flotante{
-        color: #ffffff; /* Color del texto */
-        border-radius: 5px; /* Borde del boton */
-        padding: 18px 30px; /* Relleno del boton */
+        color: #ffffff; 
+        border-radius: 5px; 
+        padding: 18px 30px; 
         position: fixed;
         bottom: 40px;
         right: 70px;
