@@ -24,6 +24,7 @@ function validarMail() {
 function validarTelefono(){
    if(isNaN(telefono.value)){
        alert("Telefono inválido");
+
    }else{
        return true;
    }
@@ -45,12 +46,11 @@ function validarVacio(){
 form.addEventListener("submit", function(e){
     if(validarVacio() && validarMail() && validarTelefono() ){
         alert("Enviado Form...")
+
     }else{
     e.preventDefault();
     
   }
-
-  
 
 } )
 
