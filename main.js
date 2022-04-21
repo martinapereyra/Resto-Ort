@@ -9,12 +9,14 @@ let mail = document.getElementById("mail"),
     form = document.getElementById("form"),
     inputs = document.getElementsByTagName('input');
 
-const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
 
 function validarMail() {
+    const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if(!regex.test(mail.value)){
         alert("Email inválido");  
+    }else{
+        return true;
     }
     
 }
@@ -22,13 +24,15 @@ function validarMail() {
 function validarTelefono(){
    if(isNaN(telefono.value)){
        alert("Telefono inválido");
+   }else{
+       return true;
    }
 }
 
 function validarVacio(){
     let i = 0;
-    let inputValue = "";
-    while(i < inputs.length && inputValue == ""){
+    let inputValue = true;
+    while(i < inputs.length && inputValue == true){
         if(inputs[i].value.trim() == ""){
             inputValue = alert("Los campos no pueden estar vacíos")
         }
@@ -38,13 +42,15 @@ function validarVacio(){
 }
     
 
-enviar.addEventListener("click", function(e){
+form.addEventListener("submit", function(e){
+    if(validarVacio() && validarMail() && validarTelefono() ){
+        alert("Enviado Form...")
+    }else{
     e.preventDefault();
-    if(validarVacio() == ""){
-        validarMail();
-        validarTelefono();
     
   }
+
+  
 
 } )
 
