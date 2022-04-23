@@ -41,16 +41,43 @@ function validarVacio(){
     }
     return inputValue;
 }
+
+// Función para cambiar el formato de fecha del form.
+    function formato(texto){
+        return texto.replace(/^(\d{4})-(\d{2})-(\d{2})$/g,'$3/$2/$1');
+  }
+
+function validarDia(){
+    let f = new Date();
+    let dia = `0${f.getDate()}`.slice(-2),
+        mes = `0${f.getMonth() + 1}`.slice(-2),
+        anio = f.getFullYear();
+        
+    let fechaActual = dia + "-" + mes + "-" + anio;
+
+    if(formato(fecha.value) < fechaActual){
+        alert(`La fecha debe ser: ${fechaActual} o mayor`);
+ 
+    }else{
+        return true;
+    }
+}
+
+function validarHora(){
+    console.log(hora.value);
+    if(hora.value < "10:00" || hora.value > "23:00"){
+        alert("La hora debe estar entre las: 10:00 y las 23:00");
+ 
+    }else{
+        return true;
+    }
+}
     
 
 form.addEventListener("submit", function(e){
-    if(validarVacio() && validarMail() && validarTelefono() ){
-        alert("Enviado Form...")
-
-    }else{
-    e.preventDefault();
-    
-  }
+    if(!validarVacio() || !validarMail() || !validarTelefono() || !validarDia() || !validarHora()){
+        e.preventDefault();
+    }
 
 } )
 
